@@ -30,6 +30,8 @@ Now, you can turn the robot on.
 ## Tutorial - Bring Up
 In order to bring the robot up, you will need to obtain the IP address of your computer and the robot.
 
+---
+
 #### Roscore IP
 
 Run the following command:
@@ -43,9 +45,9 @@ Press the button located on the robot's chest and wait. He will say:
 "Hello! I am NAO. My IP adress is ..."
 You can use the IP address in your browser to access the robot's configuration. 
 
-### Command
+---
 
-Once, the robot is running properly, you can execute the following comands:
+Once, the robot is running properly, you can execute the following command:
 ```
 $roslaunch nao_bringup nao_full_py.launch nao_ip:=X roscore_ip:=X
 ```

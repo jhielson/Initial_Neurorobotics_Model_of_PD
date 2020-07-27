@@ -20,14 +20,23 @@ In order to run this project, it will be necessary the following equipments:
     * ROS (Melodic)
     * Python 2.7
   
-## Tutorial - Installation
+## Installation
 
-1. Connect the robot to your computer using an ethernet cable. 
-2. Access the network setting and change the IPV4 method to 'Link-Local Only'.
+1. Create a catkin workspace if you don't have one already
+2. Git clone these packages into your ROS workspace.
+```
+$ cd ~/catkin_ws/src
+$ git clone https://github.com/jhielson/rat_model.git
+$ cd ~/catkin_ws
+$ catkin_make
+$ source devel/setup.bash
+```
+3. Connect the robot to your computer using an ethernet cable. 
+4. Access the network setting and change the IPV4 method to 'Link-Local Only'.
 
 Now, you can turn the robot on. 
 
-## Tutorial - Bring Up
+## Bring Up
 In order to bring the robot up, you will need to obtain the IP address of your computer and the robot.
 
 ---
@@ -52,7 +61,7 @@ Once, the robot is running properly, you can execute the following command:
 $roslaunch nao_bringup nao_full_py.launch nao_ip:=X roscore_ip:=X
 ```
 
-## Tutorial - Experiment
+## Experiment
 
 Run the following packages:
 ```

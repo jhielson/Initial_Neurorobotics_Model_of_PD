@@ -7,7 +7,11 @@ The Neurorobotics Model of Parkinson’s Disease is an interdisciplinary project
 http://www.macs.hw.ac.uk/neuro4pd/
 
 # Project
-We advanced the state-of-art by embedding, for the first time, a computational composite model of PD in a real humanoid robot that is engaged on a simple behavioral task. The computational model represented by the basal ganglia-thalamus-cortex system has been fully tuned and validated with published data. We created a sensorimotor loop with biologically informed constraints that can be selectively altered in the future. This is the first step towards advancing our knowledge about PD beyond that obtained from anatomical and physiological studies. The main contributions of this project are: i) an embedded computational composite model of Parkinson's disease in a real humanoid robot and ii) a first attempt to reproduce PD symptoms on a humanoid robot. 
+We advanced the state-of-art by embedding, for the first time, a computational composite model of PD in a real humanoid robot that is engaged on a simple behavioral task. 
+
+The main contributions of this paper are: (i) an embedded computational composite model of PD in a real humanoid robot and (ii) the reproduction of abnormal PD motor stimulation based on cortical dynamics via the modulation of central oscillators.
+
+We expect new insights into PD by future studies conducted using our proposed model.
 
 ## Requirements
 
@@ -15,8 +19,8 @@ In order to run this project, it will be necessary the following equipments:
 1. NAO robot (we used the version T14)
 2. Laptop/Computer
     * Ubuntu 18.04
-    * NetPyNE
-    * NEURON
+    * NetPyNE 0.9.9
+    * NEURON 7.6
     * ROS (Melodic)
     * Python 2.7
   
@@ -26,7 +30,7 @@ In order to run this project, it will be necessary the following equipments:
 2. Git clone these packages into your ROS workspace.
 ```
 $ cd ~/catkin_ws/src
-$ git clone https://github.com/jhielson/rat_model.git
+$ git clone https://github.com/jhielson/SML_Neuro4PD.git
 $ cd ~/catkin_ws
 $ catkin_make
 $ source devel/setup.bash
@@ -65,10 +69,10 @@ $roslaunch nao_bringup nao_full_py.launch nao_ip:=X roscore_ip:=X
 
 Run the following packages:
 ```
-$rosrun mlp_perturbation mlp.py
-$rosrun recognize_ball ball.py 
-$rosrun neural_model MarmosetNetLFP.py
-$rosrun nao_robot_script naoPD.py
+$rosrun decoding_module dm.py
+$rosrun encoding_module em.py
+$rosrun brain_module bm.py
+$rosrun behavioral_module bem.py
 ```
 
 

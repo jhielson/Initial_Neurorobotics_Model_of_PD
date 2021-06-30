@@ -1,5 +1,5 @@
 
-**This work represents the first steps towards the creation of a novel neurorobotics model of Parkinson’s Disease (PD). It is part of a multidisciplinary project, the Neuro4PD.**
+**This work represents the first steps towards the creation of an initial neurorobotics model of Parkinson’s Disease (PD). It is part of a multidisciplinary project, the Neuro4PD.**
 
 # Neuro4PD
 The Neurorobotics Model of Parkinson’s Disease is an interdisciplinary project to gain further insights into the mechanisms of Parkinson’s disease (PD) by combining the neuroscience expertise of the Brazilian partner with the data mining and robotics excellence of the UK partner. We envisage that the resultant model will contribute to inform new PD therapies and reduce and/or replace the use of live animals.
